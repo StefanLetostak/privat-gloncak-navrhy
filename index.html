@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Návrhy webu Privát Glončák</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%231f2224%22/%3E%3Cpath d=%22M6 24 13 12l4 6 3-4 6 10z%22 fill=%22%23fff%22/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/fonts/instrument-sans.css">
+<style>
+  :root { --ink: #1d2022; --muted: #5b6468; --line: #dfe2e3; --bg: #ffffff; --soft: #f3f4f4; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: 'Instrument Sans Variable', system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.55; }
+  a { color: inherit; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 clamp(1.1rem, 4vw, 2.5rem); }
+  header { padding: clamp(2.5rem, 6vw, 4.5rem) 0 2rem; }
+  h1 { margin: 0 0 .8rem; font-size: clamp(2rem, 4.5vw, 3.2rem); line-height: 1.05; letter-spacing: -.03em; font-weight: 700; }
+  header p { max-width: 62ch; margin: 0 0 .8rem; color: var(--muted); }
+  .list { display: grid; gap: clamp(2.5rem, 6vw, 4.5rem); padding: 1.5rem 0 3rem; margin: 0; list-style: none; }
+  .item { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 3.5rem); align-items: center; }
+  .shots { position: relative; display: block; padding: 0 2.6rem 2.6rem 0; }
+  .shots img { display: block; width: 100%; height: auto; }
+  .shots .desk { border-radius: 8px; box-shadow: 0 0 0 1px var(--line), 0 18px 40px -22px rgba(0, 0, 0, .45); }
+  .shots .mob { position: absolute; right: 0; bottom: 0; width: 24%; border-radius: 14px; box-shadow: 0 0 0 5px #fff, 0 0 0 6px var(--line), 0 14px 28px -12px rgba(0, 0, 0, .45); }
+  .shots:hover .desk, .shots:focus-visible .desk { box-shadow: 0 0 0 2px var(--ink), 0 18px 40px -22px rgba(0, 0, 0, .45); }
+  .shots:focus-visible { outline: none; }
+  .meta h2 { margin: 0 0 .7rem; font-size: clamp(1.6rem, 3vw, 2.2rem); line-height: 1.1; letter-spacing: -.025em; }
+  .meta h2 span { color: var(--muted); font-weight: 500; }
+  .meta .tag { display: inline-block; margin-left: .4rem; padding: .15rem .55rem; border-radius: 999px; background: var(--soft); font-style: normal; font-size: .8rem; font-weight: 600; letter-spacing: 0; vertical-align: .35em; color: var(--muted); }
+  .meta p { margin: 0 0 .9rem; }
+  .meta .fit { color: var(--muted); font-size: .98rem; }
+  .open { display: inline-flex; align-items: center; min-height: 2.9rem; margin-top: .4rem; padding: .6rem 1.2rem; border-radius: 6px; background: var(--ink); color: #fff; font-weight: 600; text-decoration: none; }
+  .open:hover { background: #000; }
+  .open:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+  .notes { margin: 1rem 0 4rem; padding: clamp(1.4rem, 3vw, 2.2rem); background: var(--soft); border-radius: 10px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem 2.5rem; }
+  .notes h3 { margin: 0 0 .5rem; font-size: 1.1rem; }
+  .notes ul { margin: 0; padding-left: 1.1rem; color: var(--muted); font-size: .97rem; }
+  .notes li { margin: .3rem 0; }
+  @media (max-width: 860px) {
+    .item { grid-template-columns: 1fr; }
+    .notes { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Návrhy webu Privát Glončák</h1>
+    <p>Šesť rôznych smerov hlavnej stránky, z&nbsp;toho dva v&nbsp;modernom štýle (E a&nbsp;F). Všetky používajú vaše fotky (len s&nbsp;upraveným svetlom a&nbsp;farbami), rovnaké overené údaje z&nbsp;inzerátu a&nbsp;rovnaký ukážkový rezervačný formulár s&nbsp;kalendárom a&nbsp;výpočtom ceny.</p>
+    <p>Kliknite na náhľad. Každý návrh funguje aj na mobile, skúste zúžiť okno prehliadača.</p>
+  </header>
+
+  <ol class="list">
+    <li class="item">
+      <a class="shots" href="a-album/" aria-label="Otvoriť návrh A: Album">
+        <img class="desk" src="nahlady/a-desktop.webp" width="1200" height="750" alt="">
+        <img class="mob" src="nahlady/a-mobil.webp" width="390" height="844" alt="">
+      </a>
+      <div class="meta">
+        <h2>A <span>Album</span></h2>
+        <p>Tmavozelené stránky rodinného fotoalbumu. Fotky sú ako nalepené fotografie s&nbsp;rožkami a&nbsp;dátumom v&nbsp;rohu, rezervácia ako kniha hostí, úprimný zoznam na linajkovom lístku.</p>
+        <p class="fit">Najlepšie spája staršie zariadenie so súčasným webom: z&nbsp;handrových kobercov a&nbsp;dreva robí prednosť.</p>
+        <a class="open" href="a-album/">Otvoriť návrh A</a>
+      </div>
+    </li>
+    <li class="item">
+      <a class="shots" href="b-chodnik/" aria-label="Otvoriť návrh B: Značkovaný chodník">
+        <img class="desk" src="nahlady/b-desktop.webp" width="1200" height="750" alt="">
+        <img class="mob" src="nahlady/b-mobil.webp" width="390" height="844" alt="">
+      </a>
+      <div class="meta">
+        <h2>B <span>Značkovaný chodník</span></h2>
+        <p>Turistický smerovník na mape s&nbsp;vrstevnicami. Vzdialenosti k&nbsp;obchodu, vleku a&nbsp;autobusu sú na tabuliach, sekcie stránky sú farebne označené ako turistické trasy.</p>
+        <p class="fit">Čisté a&nbsp;praktické, pre turistov a&nbsp;lyžiarov, ktorí riešia hlavne polohu.</p>
+        <a class="open" href="b-chodnik/">Otvoriť návrh B</a>
+      </div>
+    </li>
+    <li class="item">
+      <a class="shots" href="c-pohladnica/" aria-label="Otvoriť návrh C: Pohľadnica">
+        <img class="desk" src="nahlady/c-desktop.webp" width="1200" height="750" alt="">
+        <img class="mob" src="nahlady/c-mobil.webp" width="390" height="844" alt="">
+      </a>
+      <div class="meta">
+        <h2>C <span>Pohľadnica</span></h2>
+        <p>Retro pohľadnica zo Zuberca: veľké písmená, v&nbsp;každom fotka domu. Na zadnej strane odkaz od vás, adresa, známka s&nbsp;cenou a&nbsp;pečiatka, ktorá sa pri výbere termínu „opečiatkuje“ dátumom.</p>
+        <p class="fit">Najhravejší a&nbsp;najľahšie zapamätateľný, dobre sa zdieľa na Facebooku.</p>
+        <a class="open" href="c-pohladnica/">Otvoriť návrh C</a>
+      </div>
+    </li>
+    <li class="item">
+      <a class="shots" href="d-fakty/" aria-label="Otvoriť návrh D: Fakty">
+        <img class="desk" src="nahlady/d-desktop.webp" width="1200" height="750" alt="">
+        <img class="mob" src="nahlady/d-mobil.webp" width="390" height="844" alt="">
+      </a>
+      <div class="meta">
+        <h2>D <span>Fakty</span></h2>
+        <p>Údajový list bez prikrášľovania. Pravítko vzdialeností od dverí v&nbsp;logaritmickej mierke, tabuľka toho, čo u&nbsp;vás je aj nie je, s&nbsp;odkazmi na fotky, a&nbsp;rezervácia v&nbsp;štyroch krokoch s&nbsp;veľkou cenou.</p>
+        <p class="fit">Najrýchlejšie odpovedá na otázky hostí a&nbsp;najlepšie sa prekladá do PL a&nbsp;CZ.</p>
+        <a class="open" href="d-fakty/">Otvoriť návrh D</a>
+      </div>
+    </li>
+    <li class="item">
+      <a class="shots" href="e-panorama/" aria-label="Otvoriť návrh E: Panoráma">
+        <img class="desk" src="nahlady/e-desktop.webp" width="1200" height="750" alt="">
+        <img class="mob" src="nahlady/e-mobil.webp" width="390" height="844" alt="">
+      </a>
+      <div class="meta">
+        <h2>E <span>Panoráma</span> <em class="tag">moderný</em></h2>
+        <p>Fotka domu cez celú obrazovku a&nbsp;hneď pod nadpisom vyhľadávanie termínu ako na veľkých portáloch. Galéria izieb sa pri skrolovaní posúva do strany, všetko v&nbsp;čiernobielej, farbu dávajú len fotky.</p>
+        <p class="fit">Pôsobí najprémiovejšie, vynikne na veľkej obrazovke aj na mobile.</p>
+        <a class="open" href="e-panorama/">Otvoriť návrh E</a>
+      </div>
+    </li>
+    <li class="item">
+      <a class="shots" href="f-dlazdice/" aria-label="Otvoriť návrh F: Dlaždice">
+        <img class="desk" src="nahlady/f-desktop.webp" width="1200" height="750" alt="">
+        <img class="mob" src="nahlady/f-mobil.webp" width="390" height="844" alt="">
+      </a>
+      <div class="meta">
+        <h2>F <span>Dlaždice</span> <em class="tag">moderný</em></h2>
+        <p>Všetko podstatné na prvej obrazovke v&nbsp;dlaždiciach ako v&nbsp;mobilnej aplikácii: galéria, najbližší voľný termín jedným klikom, obsadenosť na 14 dní, cena, vzdialenosti a&nbsp;čas s&nbsp;východom a&nbsp;západom slnka v&nbsp;Zuberci.</p>
+        <p class="fit">Najrýchlejšia cesta k&nbsp;rezervácii, hosť nemusí nič hľadať.</p>
+        <a class="open" href="f-dlazdice/">Otvoriť návrh F</a>
+      </div>
+    </li>
+  </ol>
+
+  <section class="notes" aria-label="Poznámky k návrhom">
+    <div>
+      <h3>Čo je len ukážka</h3>
+      <ul>
+        <li>ceny (14&nbsp;€ za osobu a&nbsp;noc, celý dom min. 8 osôb, záloha 30&nbsp;%)</li>
+        <li>obsadené dni v&nbsp;kalendári</li>
+        <li>dátumy na fotkách v&nbsp;návrhu A, najbližší voľný termín v&nbsp;návrhu F</li>
+        <li>formulár nič neodosiela, prepínač jazykov zatiaľ nefunguje</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Čo treba ešte overiť</h3>
+      <ul>
+        <li>vybavenie kuchyne a&nbsp;izieb, počet parkovacích miest</li>
+        <li>či je trampolína a&nbsp;lyžiareň aj v&nbsp;zime</li>
+        <li>hodnotenie 4,9 z&nbsp;5 z&nbsp;Hauzi.sk pred spustením</li>
+        <li>či môžeme ukázať obraz Roháčov z&nbsp;obývačky (návrh A)</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Ako vybrať</h3>
+      <ul>
+        <li>napíšte písmeno návrhu, ktorý sa vám páči najviac</li>
+        <li>pokojne aj to, čo by ste z&nbsp;iných návrhov pridali</li>
+        <li>vybraný smer potom dotiahnem do celého webu aj administrácie</li>
+      </ul>
+    </div>
+  </section>
+</div>
+<script src="./assets/prepinac.js" data-root="./"></script>
+</body>
+</html>
